@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="reloj">
+            <h1>Reloj</h1>
+
+
+                <div class="container1" id="clock1">
+                    <div id="hora" class="hours"></div>
+                    <div id="min" class="minutes"></div>
+                    <div id="seg" class="seconds"></div>
+                </div>
+          
+        </div>
+        <div>
+            <h1>Cronometro</h1>
+            <div class="container">
+
+
+                <div class="contenedor1">
+                    <input class="number" type="text" maxlength="2" value="00"><span>hs</span>
+                    <input class="number" type="text" maxlength="2" value="00"><span>min</span>
+                    <input class="number" type="text" maxlength="2" value="00"><span>seg</span>
+
+                </div>
+
+                <div class="contenedor2">
+                    <button id="play" class="tercero" onclick="starttimer()"><span class="material-symbols-outlined">
+                            play_circle
+                        </span></button>
+                    <button id="stop" class="tercero" onclick="stoptimer()"><span class="material-symbols-outlined">
+                            stop_circle
+                        </span></button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
